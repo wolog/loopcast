@@ -1,0 +1,19 @@
+Source: loopcast
+Priority: extra
+Maintainer: Erwan Velu <erwan.velu@zodiacaerospace.com>
+Build-Depends: debhelper (>= 7), libc6-dev, libklibc-dev
+Standards-Version: 3.7.3
+Section: zodiac-nonfree/utils
+Homepage:
+
+Package: loopcast-client
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libc6
+Conflicts:
+Description: This package installs the client side of loopcast
+
+Package: loopcast-server
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libc6
+Conflicts:
+Description: This package installs the server side of loopcast
